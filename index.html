@@ -229,7 +229,7 @@ function copyQuiet(c){const k=load().find(x=>x.code===c);if(!k)return;
   const t=`รหัสการจอง: ${k.code}\nห้อง: ${k.room} (${k.type})\nเช็คอิน: ${ds(k.ci)}\nเช็คเอาท์: ${ds(k.co)}\nยอดชำระ: ฿${fmt(k.tot)}\nชื่อ: ${k.nm}`;
   try{navigator.clipboard.writeText(t)}catch(_){}}
 function imgBad(i){const p=i.closest(".pic");i.remove();if(!p.querySelector(".sl img"))p.classList.add("nop")}
-const QR_SRC="https://i.ibb.co/9H3FpM8W/IMG-8177.jpg"; /* วางรูป QR Code ที่นี่ เช่น "data:image/png;base64,..." */
+const QR_SRC="https://i.ibb.co/607BS7QN/IMG-8199.jpg"; /* วางรูป QR Code ที่นี่ เช่น "data:image/png;base64,..." */
 const MAP_URL="https://www.google.com/maps/search/?api=1&query="+encodeURIComponent("ถนนโยธาธิการ ขก.2071 ภูผาม่าน ขอนแก่น"); /* เปลี่ยนเป็นลิงก์ปักหมุดของรีสอร์ท */
 const ACCT={bank:"",name:"",no:""}; /* ชื่อธนาคาร / ชื่อบัญชี / เลขบัญชี (ไม่บังคับ) */
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
